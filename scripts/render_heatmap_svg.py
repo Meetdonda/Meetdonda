@@ -68,13 +68,13 @@ def render(data: dict, config: dict, static: bool = False) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">GitHub contribution activity for {esc(data['username'])}</title>
 <desc id="desc">{esc(footer)}</desc>
-<defs><linearGradient id="borderGradient" x1="0" x2="1"><stop stop-color="{theme['accent']}"/><stop offset=".5" stop-color="{theme.get('accent2', theme['accent'])}"/><stop offset="1" stop-color="{theme.get('accent3', theme['accent'])}"/></linearGradient></defs>
+<defs><linearGradient id="borderGradient" x1="0" x2="1"><stop stop-color="{palette[1]}"/><stop offset=".52" stop-color="{palette[3]}"/><stop offset="1" stop-color="{palette[4]}"/></linearGradient></defs>
 <style>
   .bg {{ fill: {theme['background']}; }}
   .frame {{ fill: none; stroke: url(#borderGradient); }}
-  text {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: {theme['muted']}; }}
+  text {{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #7ee787; }}
   .month {{ font-size: 11px; }} .weekday, .legend {{ font-size: 10px; }}
-  .footer {{ font-size: 12px; fill: {theme.get('accent2', theme['text'])}; }}
+  .footer {{ font-size: 12px; fill: {palette[4]}; }}
   .day {{ {day_style}; }}
   @keyframes reveal {{ to {{ opacity: 1; transform: translateY(0); }} }}
   @media (prefers-reduced-motion: reduce) {{ .day {{ opacity: 1; transform: none; animation: none; }} }}
