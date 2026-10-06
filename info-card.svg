@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="270" viewBox="0 0 490 270" role="img" aria-labelledby="title desc">
+<title id="title">Profile information for Meet Donda</title>
+<desc id="desc">n8n · AI Automation Builder</desc>
+<defs>
+  <linearGradient id="titleGradient" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#fb7185"/></linearGradient>
+  <linearGradient id="borderGradient" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#fb7185"/></linearGradient>
+</defs>
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .frame { fill: #0d1326; stroke: url(#borderGradient); }
+  .bar { fill: #070b17; }
+  .dot1 { fill:#ff5f56 } .dot2 { fill:#ffbd2e } .dot3 { fill:#27c93f }
+  .name { fill:url(#titleGradient);font-size:20px;font-weight:700 }
+  .tagline { fill:#9aa7c7;font-size:12px }
+  .key { font-size:13px;font-weight:700 }
+  .value { fill:#f5f7ff;font-size:13px }
+  .line { opacity:0;transform:translateX(-9px);animation:print .42s ease-out forwards; }
+  @keyframes print { to { opacity:1;transform:translateX(0) } }
+  @media (prefers-reduced-motion: reduce) { .line { opacity:1;transform:none;animation:none } }
+</style>
+<rect class="frame" x="0.5" y="0.5" width="489" height="269" rx="10"/>
+<path class="bar" d="M10 1h470a9 9 0 0 1 9 9v27H1V10a9 9 0 0 1 9-9z"/>
+<circle class="dot1" cx="20" cy="19" r="5"/><circle class="dot2" cx="38" cy="19" r="5"/><circle class="dot3" cx="56" cy="19" r="5"/>
+<text x="245" y="23" text-anchor="middle" style="fill:#9aa7c7;font-size:11px">whoami</text>
+<g class="line" style="animation-delay:0.16s"><text x="30" y="76" class="name">Meet Donda</text></g>
+<g class="line" style="animation-delay:0.34s"><text x="30" y="99" class="tagline">n8n · AI Automation Builder</text></g>
+<g class="line" style="animation-delay:0.55s"><text x="30" y="133" class="key" style="fill:#7c3aed">Now</text><text x="126" y="133" class="value">Building AI-powered automations</text></g><g class="line" style="animation-delay:0.71s"><text x="30" y="167" class="key" style="fill:#22d3ee">Focus</text><text x="126" y="167" class="value">n8n · AI agents · workflow systems</text></g><g class="line" style="animation-delay:0.87s"><text x="30" y="201" class="key" style="fill:#fb7185">Stack</text><text x="126" y="201" class="value">n8n · APIs · TypeScript</text></g><g class="line" style="animation-delay:1.03s"><text x="30" y="235" class="key" style="fill:#fbbf24">Based</text><text x="126" y="235" class="value">India · optixfusion</text></g>
+</svg>

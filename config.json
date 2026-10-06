@@ -1,0 +1,29 @@
+{
+  "username": "Meetdonda",
+  "terminal_name": "meet",
+  "profile": {
+    "name": "Meet Donda",
+    "tagline": "n8n · AI Automation Builder",
+    "rows": [
+      {"label": "Now", "value": "Building AI-powered automations"},
+      {"label": "Focus", "value": "n8n · AI agents · workflow systems"},
+      {"label": "Stack", "value": "n8n · APIs · TypeScript"},
+      {"label": "Based", "value": "India · optixfusion"}
+    ]
+  },
+  "links": [
+    {"label": "GitHub", "url": "https://github.com/Meetdonda"},
+    {"label": "Email", "url": "mailto:meetdonda.me@gmail.com"}
+  ],
+  "theme": {
+    "background": "#070b17",
+    "panel": "#0d1326",
+    "border": "#26365e",
+    "text": "#f5f7ff",
+    "muted": "#9aa7c7",
+    "accent": "#7c3aed",
+    "accent2": "#22d3ee",
+    "accent3": "#fb7185",
+    "green": ["#111827", "#4c1d95", "#7c3aed", "#06b6d4", "#fbbf24"]
+  }
+}
