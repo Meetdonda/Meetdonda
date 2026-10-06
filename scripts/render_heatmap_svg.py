@@ -26,6 +26,7 @@ def month_labels(days: list[dict], start: date, cell: int, gap: int, left: int) 
 def render(data: dict, config: dict, static: bool = False) -> str:
     theme = config["theme"]
     palette = theme["green"]
+    background_palette = theme.get("green_background", [palette[0]])
     days = sorted(data["days"], key=lambda item: item["date"])
     first = date.fromisoformat(days[0]["date"])
     start = first
@@ -41,9 +42,16 @@ def render(data: dict, config: dict, static: bool = False) -> str:
         y = top + weekday * (cell + gap)
         delay = min(1.8, (week + weekday) * 0.018)
         label = f"{item['count']} contributions on {current.strftime('%B %d, %Y')}"
+        if item["level"] == 0:
+            # Decorative dark-green variation fills inactive days without
+            # changing their real contribution count or accessibility label.
+            color_index = (week * 11 + weekday * 7 + current.day) % len(background_palette)
+            fill = background_palette[color_index]
+        else:
+            fill = theme.get("green_active", palette[item["level"]])
         rects.append(
             f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2" '
-            f'fill="{palette[item["level"]]}" class="day" style="animation-delay:{delay:.3f}s">'
+            f'fill="{fill}" class="day" style="animation-delay:{delay:.3f}s">'
             f'<title>{esc(label)}</title></rect>'
         )
 
